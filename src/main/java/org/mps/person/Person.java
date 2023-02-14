@@ -48,6 +48,26 @@ public class Person {
      * @return
      */
     public double[] averageAgePerGender(List<Person> persons) {
-        return null;
+        double[] res = new double[2];
+        res[0] = 0;
+        res[1] = 0;
+
+        int contMale = 0;       // Number of male persons in the list
+        int contFemale = 0;     // Number of female persons in the list
+
+        for(Person p : persons) {
+            if(p.gender().equals("Male")) {
+                res[0] += p.age();
+                contMale++;
+            } else if(p.gender().equals("Female")) {
+                res[1] += p.age();
+                contFemale++;
+            }
+        }
+
+        res[0] /= contMale;         // Computes the male mean age
+        res[1] /= contFemale;       // Computes the female mean age
+
+        return res;
     }
 }
