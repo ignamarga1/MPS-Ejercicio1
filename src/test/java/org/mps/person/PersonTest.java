@@ -46,6 +46,7 @@ class PersonTest {
     void averageAgeOf1MaleShouldReturnHisAge() {
         persons.add(person1);
         double[] obtainedValue = person.averageAgePerGender(persons);
-
+        double expectedValue = 34;
+        assertEquals(expectedValue,obtainedValue[0]);
     }
 }
