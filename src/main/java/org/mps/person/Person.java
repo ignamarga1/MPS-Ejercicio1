@@ -69,10 +69,6 @@ public class Person {
         res[0] /= contMale;         // Computes the male mean age
         res[1] /= contFemale;       // Computes the female mean age
 
-        DecimalFormat df = new DecimalFormat("#.00");
-        df.format(res[0]);
-        df.format(res[1]);
-
         return res;
     }
 }
