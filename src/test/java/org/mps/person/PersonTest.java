@@ -117,4 +117,9 @@ class PersonTest {
 
         assertArrayEquals(expectedValue, obtainedValue);
     }
+
+    @Test
+    void checkTheNameOfThePersonIsCorrect() {
+        assertEquals("Ignacio", person.name());
+    }
 }
