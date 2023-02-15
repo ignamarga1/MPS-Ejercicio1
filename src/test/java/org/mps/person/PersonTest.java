@@ -17,6 +17,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /*
 * Test cases
+*  1. averageAge of 1 male (Arturo) equals his age (34)
+*  2. averageAge of 1 female (Maite) equals his age (87)
+*  3. averageAge of 2 persons (Paola and Jaime) returns averageAge[0] = 12 and averageAge[1] = 56
+*  4. averageAge of all males returns averageAge[0] = (34+12+46)/3
+*  5. averageAge of all females returns averageAge[1] = (87+56+47)/3
+*  6. averageAge of all returns averageAge[0] = (34+12+46)/3 and averageAge[1] = (87+56+47)/3
 * */
 class PersonTest {
     Person person, person1, person2, person3, person4, person5, person6;
@@ -111,5 +117,4 @@ class PersonTest {
 
         assertArrayEquals(expectedValue, obtainedValue);
     }
-
 }
